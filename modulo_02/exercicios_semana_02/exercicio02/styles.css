@@ -1,0 +1,27 @@
+h1{
+    font-size: 32px;
+    color: chocolate;
+    background-color: aqua;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+p{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+ul{
+    background-color: rgb(165, 237, 165);
+    list-style-type: square;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
