@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Abrir Prompt</h1>
+
+    <button onclick="interact()">Clique aqui</button>
+    <p id="nome"></p>
+
+    <script>
+
+function interact(){
+            let name = prompt("Insira seu nome")
+
+            if(name == null || name == ""){
+                document.getElementById("nome").innerHTML = "Erro: Nenhum nome foi inserido."
+                return;
+            }
+
+            let confirmInteraction = confirm("Você deseja continuar com a interação?")
+            if(confirmInteraction){
+                document.getElementById("nome").innerHTML = `Olá, ${name}! Vamos continuar.`
+            } else {
+                document.getElementById("nome").innerHTML = `Olá, ${name}! Você escolheu encerrar.`
+            }
+        }
+
+
+    </script>
+</body>
+</html>
