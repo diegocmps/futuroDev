@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .alert {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Abrir Prompt</h1>
@@ -13,22 +19,25 @@
 
     <script>
 
-function interact(){
+        function interact(){
             let name = prompt("Insira seu nome")
 
             if(name == null || name == ""){
-                document.getElementById("nome").innerHTML = "Erro: Nenhum nome foi inserido."
+                alert("Erro: Nenhum nome foi inserido.");
+                document.getElementById("nome").classList.add("alert");
+                document.getElementById("nome").innerHTML = "Erro: Nenhum nome foi inserido.";
                 return;
             }
 
             let confirmInteraction = confirm("Você deseja continuar com a interação?")
             if(confirmInteraction){
-                document.getElementById("nome").innerHTML = `Olá, ${name}! Vamos continuar.`
+                document.getElementById("nome").classList.remove("alert");
+                document.getElementById("nome").innerHTML = `Olá, ${name}! Vamos continuar.`;
             } else {
-                document.getElementById("nome").innerHTML = `Olá, ${name}! Você escolheu encerrar.`
+                document.getElementById("nome").classList.add("alert");
+                document.getElementById("nome").innerHTML = `Olá, ${name}! Você escolheu encerrar.`;
             }
         }
-
 
     </script>
 </body>
