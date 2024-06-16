@@ -3,20 +3,20 @@ const episodios = [
         id: 1,
         episodio: 'T1:01',
         tempo: '24min',
-        imagem: '/images/cena01.png'
+        imagem: './images/cena01.png'
     },
     {
         id: 2,
         episodio: 'T1:02',
         tempo: '26min',
-        imagem: '/images/cena02.png'
+        imagem: './images/cena02.png'
 
     },
     {
         id: 3,
         episodio: 'T1:03',
         tempo: '29min',
-        imagem: '/images/cena03.png'
+        imagem: './images/cena03.png'
 
     }
 ]
