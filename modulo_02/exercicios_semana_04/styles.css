@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background-image: url('./images/sans-titre-2_332t.1280.webp');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    padding: 2em 25vw;
+    justify-content: space-between;
+    align-items: flex-end
+
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 150px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.area-descricao{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+}
+
+.titulo{
+    font-size: 18px;
+}
+
+.genero{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 28px;
+
+}
+
+.temporada{
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+}
+
+.seta{
+    cursor: pointer;
+
+}
+
+.episodios{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.card-episodio{
+    width: 230px;
+    height: 135px;
+    /* background-color: #E5E5E5; */
+    border-radius: 4px;
+}
+
+.card-episodio img{
+    width: 230px;
+    height: 135px;
+    border-radius: 4px;
+}
+
+.poster {
+    width: 392px;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 160px;
+    position: absolute;
+    right: 30px;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+    
