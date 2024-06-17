@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Referência ao arquivo CSS externo -->
+</head>
+<body>
+    <header>
+        <h1>LAB365</h1>
+    </header>
+    <h1>Cadastro de Alunos</h1>
+    <input type="text" id="entradaNome" placeholder="Digite o nome do aluno" onkeypress="checarEnter(event)">
+    <button onclick="adicionarNome()">Adicionar</button>
+    <button onclick="ordenarAZ()">A-Z</button>
+    <button onclick="ordenarZA()">Z-A</button>
+    <ul id="listaNomes"></ul>
+    
+    <script>
+        // Adiciona nome e salva no Local Storage
+        function adicionarNome() {
+            var entrada = document.getElementById('entradaNome');
+            var nome = entrada.value;
+            if (!nome) return; // Previne adicionar nomes vazios
+            var nomes = buscarNomes();
+            nomes.push(nome);
+            localStorage.setItem('nomes', JSON.stringify(nomes));
+            mostrarNomes();
+            entrada.value = ''; // Limpa o campo de entrada após adicionar
+        }
+
+        // Função para verificar se a tecla Enter foi pressionada
+        function checarEnter(event) {
+            if (event.key === "Enter") {
+                adicionarNome(); // Chama a função de adicionar nome quando Enter é pressionado
+            }
+        }
+
+        // Busca nomes salvos no Local Storage
+        function buscarNomes() {
+            var nomes = localStorage.getItem('nomes');
+            return nomes ? JSON.parse(nomes) : [];
+        }
+
+        // Mostra os nomes na página
+        function mostrarNomes() {
+            var nomes = buscarNomes();
+            var lista = document.getElementById('listaNomes');
+            lista.innerHTML = ''; // Limpa a lista antes de adicionar os novos itens
+            nomes.forEach(function(nome, index) {
+                var item = document.createElement('li');
+                item.textContent = nome;
+
+                // Botão de exclusão
+                var btnExcluir = document.createElement('button');
+                btnExcluir.textContent = 'Excluir';
+                btnExcluir.className = 'btn';
+                btnExcluir.onclick = function() {
+                    excluirNome(index);
+                };
+                item.appendChild(btnExcluir);
+
+                // Botão de alteração
+                var btnAlterar = document.createElement('button');
+                btnAlterar.textContent = 'Alterar';
+                btnAlterar.className = 'btn';
+                btnAlterar.onclick = function() {
+                    alterarNome(index, nome);
+                };
+                item.appendChild(btnAlterar);
+
+                lista.appendChild(item);
+            });
+        }
+
+        // Exclui um nome pelo índice
+        function excluirNome(index) {
+            var nomes = buscarNomes();
+            nomes.splice(index, 1);
+            localStorage.setItem('nomes', JSON.stringify(nomes));
+            mostrarNomes();
+        }
+
+        // Altera um nome pelo índice
+        function alterarNome(index, nomeAtual) {
+            var novoNome = prompt("Alterar nome:", nomeAtual);
+            if (novoNome) {
+                var nomes = buscarNomes();
+                nomes[index] = novoNome;
+                localStorage.setItem('nomes', JSON.stringify(nomes));
+                mostrarNomes();
+            }
+        }
+
+        // Ordena nomes de A-Z
+        function ordenarAZ() {
+            var nomes = buscarNomes();
+            nomes.sort();
+            localStorage.setItem('nomes', JSON.stringify(nomes));
+            mostrarNomes();
+        }
+
+        // Ordena nomes de Z-A
+        function ordenarZA() {
+            var nomes = buscarNomes();
+            nomes.sort().reverse();
+            localStorage.setItem('nomes', JSON.stringify(nomes));
+            mostrarNomes();
+        }
+
+        // Mostra nomes ao carregar a página
+        document.addEventListener('DOMContentLoaded', mostrarNomes);
+    </script>
+</body>
+</html>

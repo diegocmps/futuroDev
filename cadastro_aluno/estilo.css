@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #340674; 
+    color: white; 
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    width: 200px;
+}
+
+button {
+    background-color: #FF0078; 
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    background-color: #FF6AB3; 
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
