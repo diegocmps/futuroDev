@@ -73,14 +73,14 @@ Foram incluídas nesta versão:
 
 **Front-end:**
 
-HTML5
-![HTML5](assets/images/icons8-html-48.png)
+
+![HTML5](assets/images/icons8-html-48.png) - HTML5
 
 JAVASCRIPT
- ![JavaScript](assets/images/icons8-javascript-48.png)
+ ![JavaScript](assets/images/icons8-javascript-48.png) - 
 
-CSS3
- ![CSS3](assets/images/icons8-css-48.png) 
+
+ ![CSS3](assets/images/icons8-css-48.png) - CSS3
 
 
 
