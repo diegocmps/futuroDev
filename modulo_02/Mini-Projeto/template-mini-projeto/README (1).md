@@ -76,8 +76,8 @@ Foram incluídas nesta versão:
 
 ![HTML5](assets/images/icons8-html-48.png) - HTML5
 
-JAVASCRIPT
- ![JavaScript](assets/images/icons8-javascript-48.png) - 
+
+ ![JavaScript](assets/images/icons8-javascript-48.png) - JAVASCRIPT
 
 
  ![CSS3](assets/images/icons8-css-48.png) - CSS3
