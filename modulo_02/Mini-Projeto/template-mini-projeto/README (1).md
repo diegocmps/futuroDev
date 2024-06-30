@@ -1,5 +1,5 @@
 
-![Logo](modulo_02/Mini-Projeto/template-mini-projeto/assets/logotipo.png)
+![Logo](assets/logotipo.png)
 
 
 # Meus Interesses - LAB365
