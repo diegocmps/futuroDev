@@ -1,0 +1,41 @@
+.card-bicicleta .modelo::before{
+    content: "";
+    display:inline-block;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+    background-color: #ffbb00;  
+
+}
+
+.card-bicicleta {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+    
+
+}
+
+.card-bicicleta img {
+    width: 280px;
+    border-radius: 4px;
+}
+
+.card-bicicleta .modelo {
+    color: #2c2c2c;
+    font-size: 19px;
+}
+
+.card-bicicleta .preco{
+    color: #595959;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  
+  }

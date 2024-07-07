@@ -1,0 +1,27 @@
+.nosso-contato{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+    justify-content: center;
+}
+
+.local, .fomr{
+    padding: 35px;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+li span {
+    display: block;
+}
