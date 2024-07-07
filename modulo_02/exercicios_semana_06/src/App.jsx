@@ -12,9 +12,9 @@ function App() {
 
       <Header></Header>
 
-      <Bicicletas></Bicicletas>
+      {/* <Bicicletas></Bicicletas> */}
 
-      {/* <Contato></Contato> */}
+      <Contato></Contato>
 
       <Footer></Footer>
 
