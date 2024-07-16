@@ -1,5 +1,8 @@
 
 import { Contador } from './components/Contador'
+import { Filter } from './components/Filter'
+import { News } from './components/News'
+
 function App() {
 
 
@@ -8,10 +11,15 @@ function App() {
     <div>
 
       <div className='list-contador'>
-      <Contador />
+        <Contador />
+      </div>
 
 
-      </div>        
+
+      <Filter></Filter>
+
+      <News/>
+
 
     </div>
 
