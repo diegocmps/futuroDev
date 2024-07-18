@@ -21,7 +21,6 @@ export function Filter() {
         <div>
             <span>Filtros:</span>
             <div style={{marginBottom: 32, display: 'flex', gap: 16}}>
-                {/* <button onClick={()=> setContador(prevState => prevState + 1)}>Adicionar</button> */}
                 <button onClick={() => setFiltro('todos')}>Todos</button>
                 <button onClick={() => setFiltro('filmes')}>Filmes</button>
                 <button onClick={() => setFiltro('series')}>Séries</button>

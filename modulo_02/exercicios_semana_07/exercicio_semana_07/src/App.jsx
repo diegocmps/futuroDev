@@ -1,5 +1,4 @@
 import './App.css'
-import { useRef } from 'react'
 import { Contador } from './components/Exercicio01/Contador'
 import News from './components/Exercicio02/News'
 import InputList from './components/Exercicio03/InputList'

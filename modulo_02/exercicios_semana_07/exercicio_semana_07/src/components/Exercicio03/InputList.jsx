@@ -1,18 +1,18 @@
 import { useState } from 'react';
 
 function InputList() {
-  const [inputValue, setInputValue] = useState(''); // Estado para o valor do input
-  const [listItems, setListItems] = useState([]); // Estado para a lista de itens
+  const [inputValue, setInputValue] = useState(''); 
+  const [listItems, setListItems] = useState([]); 
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value); // Atualiza o valor do input
+    setInputValue(e.target.value); 
   };
 
   const handleAddToList = () => {
     if (inputValue.trim() !== '') {
-      // Adiciona o valor à lista (se não estiver vazio)
+      
       setListItems([...listItems, inputValue]);
-      setInputValue(''); // Limpa o input
+      setInputValue(''); 
     }
   };
 
