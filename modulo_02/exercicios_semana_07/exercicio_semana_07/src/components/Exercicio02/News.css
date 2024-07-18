@@ -1,0 +1,10 @@
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border: 1px dashed #a7aec9;
+    background: #e0e4f2;
+    color: #3c3e48;
+  }

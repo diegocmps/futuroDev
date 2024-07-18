@@ -1,0 +1,20 @@
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border: 1px dashed #a7aec9;
+    background: #e0e4f2;
+    color: #3c3e48;
+  }
+  
+  .list-contador {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 750px;
+    width: 100%;
+    margin: 32px auto ;
+  }

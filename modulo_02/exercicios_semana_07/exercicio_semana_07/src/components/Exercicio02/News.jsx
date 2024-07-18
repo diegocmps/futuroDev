@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
+import './News.css'
 
-export function News() {
+function News() {
 
     const [title, setTitle] = useState(null)
 
@@ -19,7 +20,7 @@ export function News() {
     }, [])
 
     return (
-        <div className="contador">
+        <div className="news">
             <strong>Noticia do dia</strong>
             <p>
                 {title}
@@ -28,3 +29,5 @@ export function News() {
         </div>
     )
 }
+
+export default News
