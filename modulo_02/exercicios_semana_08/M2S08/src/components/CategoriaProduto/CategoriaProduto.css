@@ -1,0 +1,25 @@
+.card-categoria {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 100%;
+    margin: 0 auto; 
+    justify-content: center;
+
+}
+
+
+
+.imagem{
+    background-color: rgb(243, 246, 243);
+    border-radius: 12px;
+    height: 80px;
+    width: 170px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img {
+    width: 72px;
+    height: 72px;
+}
